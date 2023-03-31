@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class=" bg-neutral-800">
+    <main class="flex items-center h-screen p-5 max-[520px]:p-4 max-[420px]:p-1">
+        <div class="flex flex-col w-1/4 h-full max-[640px]:w-full sm:w-3/4 md:w-1/2 lg:w-1/3 min-[1300px]:w-1/4 container mx-auto border-2 border-solid border-stone-700 rounded-lg bg-black text-white p-0 m-0">
+            
+            <div class="container w-full h-1/3 text-justify bg-neutral-800 p-0 m-0 rounded-t-lg border-b-2 border-stone-900"> 
+                <div class="flex h-5/6">
+                    <p class="m-2 overflow-auto" id="input">
+                    </p>
+                </div>
+                <div class="flex h-1/6 justify-end hover:bg-orange-500 hover:text-white text-orange-500 transition duration-300 ease-in-out font-semibold" id="outputContainer">
+                    <p class="m-2 text-right" id="output">
+                        200
+                    </p>
+                </div>
+                        
+            </div>
+            <div class="container w-full h-2/3 grid grid-cols-4 gap-1 ">
+                <button id="calcButnClear" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg">AC</button>
+                <button id="calcButnNegPos" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg">+/-</button>
+                <button id="calcButnPercent" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg">%</button>
+                <button id="calcButnPlus" class="m-2 active:font-bold bg-orange-500 endNum hover:bg-orange-300 active:bg-white active:text-orange-500 transition duration-300 ease-in-out text-white rounded-lg">+</button>
+                <button id="calcButn7" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg repeatBtn">7</button>
+                <button id="calcButn8" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg repeatBtn">8</button>
+                <button id="calcButn9" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg repeatBtn">9</button>
+                <button id="calcButnMinus" class="m-2 active:font-bold bg-orange-500 endNum hover:bg-orange-300 active:bg-white active:text-orange-500 transition duration-300 ease-in-out text-white rounded-lg">-</button>
+                <button id="calcButn4" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg repeatBtn">4</button>
+                <button id="calcButn5" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg repeatBtn">5</button>
+                <button id="calcButn6" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg repeatBtn">6</button>
+                <button id="calcButnEqualsMult" class="m-2 active:font-bold bg-orange-500 endNum hover:bg-orange-300 active:bg-white active:text-orange-500 transition duration-300 ease-in-out text-white rounded-lg">*</button>
+                <button id="calcButn1" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg repeatBtn">1</button>
+                <button id="calcButn2" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg repeatBtn">2</button>
+                <button id="calcButn3" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg repeatBtn">3</button>
+                <button id="calcButnDivide" class="m-2 active:font-bold bg-orange-500 endNum hover:bg-orange-300 active:bg-white active:text-orange-500 transition duration-300 ease-in-out text-white rounded-lg">/</button>
+                <button id="calcButn0" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg repeatBtn">0</button>
+                <button id="calcButnDesc" class="m-2 active:font-bold bg-neutral-700 hover:bg-neutral-500 active:bg-white active:text-black transition duration-300 ease-in-out text-white rounded-lg">.</button>
+                <button id="calcButnEqual" class="m-2 active:font-bold bg-orange-500 endNum hover:bg-orange-300 active:bg-white active:text-orange-500 transition duration-300 ease-in-out text-white rounded-lg col-span-2">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
