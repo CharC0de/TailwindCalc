@@ -1,3 +1,5 @@
+console.log("str"+"str")
+
 const repeatButtons = document.querySelectorAll(".repeatBtn")
 const numEnd = document.querySelectorAll(".endNum")
 const inputField = document.getElementById("input")
@@ -81,3 +83,5 @@ clear.addEventListener("click", function (){
     inputField.innerHTML=inputField.innerHTML.slice(0,-1)
     console.log(calcArr)
 })
+
+c
